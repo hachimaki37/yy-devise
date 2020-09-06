@@ -1,0 +1,15 @@
+/Users/yutakayamaki/.rbenv/versions/2.2.4/bin/ruby -r ./siteconf20200824-52217-11pa0tp.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling bcrypt_ext.c
+compiling crypt_blowfish.c
+clang  -D__SKIP_GNU -I/Users/yutakayamaki/.rbenv/versions/2.2.4/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -c -o x86.o x86.S
+compiling crypt_gensalt.c
+compiling wrapper.c
+linking shared-object bcrypt_ext.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20200824-52217-tdbbod
